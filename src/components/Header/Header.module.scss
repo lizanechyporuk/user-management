@@ -1,0 +1,26 @@
+@use "/src/styles/main.scss";
+@use "/src/styles/mixins/fonts-mixins" as fonts;
+@use "/src/styles/mixins/breakpoints-mixins" as breakpoints;
+
+.header {
+  background: var(--primary-bg-color);
+  text-align: center;
+
+  h1 {
+    @include fonts.heading-3-light-bold;
+    margin: 0;
+    padding: 50px;
+
+    @include breakpoints.for-sm-screen {
+      @include fonts.heading-2-light-bold;
+    }
+
+    @include breakpoints.for-md-screen {
+      @include fonts.heading-1-light-bold;
+    }
+
+    span {
+      color: var(--secondary-text-color);
+    }
+  }
+}

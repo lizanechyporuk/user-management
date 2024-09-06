@@ -1,0 +1,46 @@
+@use "../main.scss";
+
+/* --- HEADINGS --- */
+
+@mixin heading-1-light-bold {
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--tw-bold);
+  color: var(--light-text-color);
+  font-size: 48px;
+}
+
+@mixin heading-2-light-bold {
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--tw-bold);
+  color: var(--light-text-color);
+  font-size: 32px;
+}
+
+@mixin heading-3-light-bold {
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--tw-bold);
+  color: var(--light-text-color);
+  font-size: 16px;
+}
+
+/* --- PARAGRAPHS --- */
+
+@mixin paragraph-14-primary-normal {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-normal);
+  color: var(--primary-text-color);
+  font-size: 14px;
+}
+
+@mixin paragraph-16-primary-normal {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-normal);
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
